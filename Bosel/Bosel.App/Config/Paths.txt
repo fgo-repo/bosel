@@ -1,0 +1,5 @@
+﻿{
+	"PathIn":"C:\\Users\\Admin\\Google Drive\\data\\files",
+	"PathOut":"",
+	"PathSettings":""
+}

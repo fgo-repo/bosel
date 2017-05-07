@@ -1,0 +1,117 @@
+﻿{ "Categories":
+	[
+		{
+			"Code":"Nourriture",
+			"CategoryCodes":
+			[
+				{ "Code":"CARREFOUR" },
+				{ "Code":"COLRUYT" },
+				{ "Code":"LIDL" },
+				{ "Code":"ALDI" },
+				{ "Code":"CORA" },
+				{ "Code":"MC DONALD" },
+				{ "Code":"QUICK" },
+				{ "Code":"TITANIC" },
+				{ "Code":"INTERMARCHE" },
+				{ "Code":"CHAMPION" },
+				{ "Code":"THAI SUPERMARKET" },
+				{ "Code":"KAM YUEN MARKET" },
+				{ "Code":"GB EXPRESS" },
+				{ "Code":"FRITERIE" }
+			]
+		},
+		{
+			"Code":"Charges",
+			"CategoryCodes":
+			[
+				{ "Code":"BELGACOM" },
+				{ "Code":"ELECTRABEL" },
+				{ "Code":"SWDE" },
+				{ "Code":"S.W.D.E." },
+				{ "Code":"V.O.O." },
+				{ "Code":"FRAIS MENSUELS D'EQUIPEMENT" },
+				{ "Code":"FRAIS MENSUELS D'UTILISATION" }
+			]
+		},
+		{
+			"Code":"Voiture",
+			"CategoryCodes":
+			[
+				{ "Code":"VOITURE" },
+				{ "Code":"XPNEUS" },
+				{ "Code":"ESSO" },
+				{ "Code":"ATREA" },
+				{ "Code":" Q8 " },
+				{ "Code":"MARTENS" },
+				{ "Code":"TOTAL" },
+				{ "Code":"AVIA" },
+				{ "Code":"EURO+" },
+				{ "Code":"AUTO 5" },
+				{ "Code":"ETHIAS ASSURANCE" }
+			]
+		},
+		{
+			"Code":"Santé",
+			"CategoryCodes":
+			[
+				{ "Code":"MUTUALITE" },
+				{ "Code":"LABORATOIRE" },
+				{ "Code":"PHARMACIE" }
+			]
+		},
+		{
+			"Code":"Taxe",
+			"CategoryCodes":
+			[
+				{ "Code":"BE59 0971 5755 0026" },
+				{ "Code":"BE49 0912 1503 3871" },
+				{ "Code":"S.P.F. FINANCES" },
+				{ "Code":"RADIO-TELEVISION REDEVANCE" },
+				{ "Code":"DGO FISCALITE" },
+				{ "Code":"IMPOTS" }
+			]
+		},					
+		{
+			"Code":"Décoration",
+			"CategoryCodes":
+			[
+				{ "Code":"BRICO" },
+				{ "Code":"HUBO" },
+				{ "Code":"BLOKKER" },
+				{ "Code":"SOFT PLUME" },
+				{ "Code":"MEDIA MARKT" },
+				{ "Code":"BELOT" },
+				{ "Code":"ZEEMAN" },
+				{ "Code":"TRAFIC" },
+				{ "Code":"MAISONS DU MONDE" },
+				{ "Code":"DISTRIMEUBLES" }
+			]
+		},
+		{
+			"Code":"Beauté",
+			"CategoryCodes":
+			[
+				{ "Code":"OCCITANE" },
+				{ "Code":"PARIS XL" },
+				{ "Code":"YVES ROCHER" },
+				{ "Code":"DECATHLON" },
+				{ "Code":"BRANTANO" }
+			]
+		},		
+		{
+			"Code":"hors UE",
+			"CategoryCodes":
+			[
+				{ "Code":"VIREMENT ETRANGER" }
+			]
+		},
+		{
+			"Code":"Salaire",
+			"CategoryCodes":
+			[
+				{ "Code":"SALAIRE" },
+				{ "Code":"PECULE" }
+			]
+		}
+	]
+}

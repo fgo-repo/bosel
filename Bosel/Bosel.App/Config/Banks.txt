@@ -1,0 +1,291 @@
+﻿{ "Banks":
+	[
+		{
+			"Name":"BNP",
+			"IncludeBankSheet":false,
+			"Settings":
+			[
+				{
+					"DataSetting":
+					{
+						"Pattern":"BNP_Old",
+						"MinVal":0,
+						"MaxVal":10000
+					},
+					"DataMapping":
+					{
+						"IsKeyUpper":false,
+						"KeyFields":
+						[
+							"CUSTOMER",
+							"DETAIL"
+						],
+						"MappingFields":
+						[
+							{
+								"In": "ANNEE + REFERENCE",
+								"Out": "ID"
+							},
+							{
+								"In": "DATE VALEUR",
+								"Out": "DATEVAL",
+								"Format": "dd/MM/yyyy"
+							},
+							{
+								"In": "MONTANT",
+								"Out": "VALUE"
+							},
+							{
+								"In": "CONTREPARTIE DE L'OPERATION",
+								"Out": "CUSTOMER"
+							},
+							{
+								"In": "DETAIL",
+								"Out": "DETAIL"
+							},
+							{
+								"In": "NUMERO DE COMPTE",
+								"Out": "ACCOUNT"
+							},
+						]						
+					}
+				},
+				{
+					"DataSetting":
+					{
+						"Pattern":"BNP_New",
+						"MinVal":0,
+						"MaxVal":10000
+					},
+					"DataMapping":
+					{
+						"IsKeyUpper":false,
+						"KeyFields":
+						[
+							"CUSTOMER",
+							"DETAIL"
+						],
+						"MappingFields":
+						[
+							{
+								"In": "Numéro de séquence",
+								"Out": "ID"
+							},
+							{
+								"In": "Date valeur",
+								"Out": "DATEVAL",
+								"Format": "dd/MM/yyyy"
+							},
+							{
+								"In": "Montant",
+								"Out": "VALUE"
+							},
+							{
+								"In": "CONTREPARTIE DE LA TRANSACTION",
+								"Out": "CUSTOMER"
+							},
+							{
+								"In": "Détails",
+								"Out": "DETAIL"
+							},
+							{
+								"In": "Numéro de compte",
+								"Out": "ACCOUNT"
+							},
+						]						
+					}
+				}
+			]
+		},
+		{
+			"Name":"ING",
+			"IncludeBankSheet":false,
+			"Settings":
+			[
+				{
+					"DataSetting":
+					{
+						"Pattern":"ING",
+						"MinVal":0,
+						"MaxVal":0
+					},
+					"DataMapping":
+					{
+						"IsKeyUpper":true,
+						"KeyFields":
+						[
+							"CUSTOMER",
+							"DETAIL",
+							"MESSAGE"
+						],
+						"MappingFields":
+						[
+							{
+								"In": "Numéro de mouvement",
+								"Out": "ID"
+							},
+							{
+								"In": "Date valeur",
+								"Out": "DATEVAL",
+								"Format": "dd/MM/yyyy"
+							},
+							{
+								"In": "Montant",
+								"Out": "VALUE"
+							},
+							{
+								"In": "Nom du compte",
+								"Out": "CUSTOMER"
+							},
+							{
+								"In": "Détails du mouvement",
+								"Out": "DETAIL"
+							},
+							{
+								"In": "Message",
+								"Out": "MESSAGE"
+							},
+							{
+								"In": "Numéro de compte",
+								"Out": "ACCOUNT"
+							},
+						]
+					}
+				}
+			]
+		},
+		{
+			"Name":"BPOST",
+			"IncludeBankSheet":false,
+			"Settings":
+			[
+				{
+					"DataSetting":
+					{
+						"Pattern":"BE27000",
+						"MinVal":0,
+						"MaxVal":0
+					},
+					"FileSetting":
+					{
+						"RowIndex":1,
+						"SheetIndex":0
+					},
+					"DataMapping":
+					{
+						"IsKeyUpper":true,
+						"KeyFields":
+						[
+							"CUSTOMER",
+							"DETAIL"
+						],
+						"MappingFields":
+						[
+							{
+								"In": "Référence de l'opération",
+								"Out": "ID"
+							},
+							{
+								"In": "Date valeur",
+								"Out": "DATEVAL",
+								"Format": "dd/MM/yyyy"
+							},
+							{
+								"In": "Montant de l'opération",
+								"Out": "VALUE"
+							},
+							{
+								"In": "Nom de la contrepartie",
+								"Out": "CUSTOMER"
+							},
+							{
+								"In": "Communication 1",
+								"Out": "DETAIL"
+							},
+							{
+								"In": "Communication 2",
+								"Out": "MESSAGE"
+							},
+							{
+								"In": "Compte de contrepartie",
+								"Out": "ACCOUNT"
+							},
+						]
+					}
+				}
+			]
+		},
+		{
+			"Name":"RABOBANK",
+			"IncludeBankSheet":false,
+			"Settings":
+			[
+				{
+					"DataSetting":
+					{
+						"Pattern":"RABOBANK",
+						"MinVal":0,
+						"MaxVal":0
+					},
+					"FileSetting":
+					{
+						"RowIndex":1,
+						"SheetIndex":0
+					},
+					"DataMapping":
+					{
+						"IsKeyUpper":true,
+						"KeyFields":
+						[
+							"CUSTOMER",
+							"DETAIL"
+						],
+						"MappingFields":
+						[
+							{
+								"In": "Nombre",
+								"Out": "ID"
+							},
+							{
+								"In": "Date valeur",
+								"Out": "DATEVAL",
+								"Format": "dd/MM/yyyy"
+							},
+							{
+								"In": "Montant",
+								"Out": "VALUE"
+							},
+							{
+								"In": "Nom contrepartie",
+								"Out": "CUSTOMER"
+							},
+							{
+								"In": "Communication partie 1",
+								"Out": "DETAIL"
+							},
+							{
+								"In": "Compte contrepartie",
+								"Out": "ACCOUNT"
+							},
+						]
+					}
+				}
+			]
+		},
+		{
+			"Name":"Standard",
+			"IncludeBankSheet":false,
+			"Settings":
+			[
+				{
+					"DataSetting":
+					{
+						"Pattern":"test",
+						"MinVal":0,
+						"MaxVal":0
+					}
+				}
+			]
+		}
+	]  
+}	
