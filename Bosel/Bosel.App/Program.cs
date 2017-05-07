@@ -111,7 +111,7 @@ namespace Bosel.App
         /// <param name="path">The path.</param>
         private static void TestPath(string path)
         {
-            if(!File.Exists(path))
+            if(!Directory.Exists(path))
             {
                 Console.WriteLine("WARNING: setting path '{0}' not found.", path);
             }
