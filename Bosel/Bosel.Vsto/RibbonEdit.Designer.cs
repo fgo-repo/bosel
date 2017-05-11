@@ -36,23 +36,25 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group2 = this.Factory.CreateRibbonGroup();
+            this.btnOpen = this.Factory.CreateRibbonButton();
+            this.btnSave = this.Factory.CreateRibbonButton();
             this.group1 = this.Factory.CreateRibbonGroup();
             this.cbxCategories = this.Factory.CreateRibbonComboBox();
             this.cbxCategoriesCodes = this.Factory.CreateRibbonComboBox();
-            this.separator2 = this.Factory.CreateRibbonSeparator();
-            this.separator1 = this.Factory.CreateRibbonSeparator();
-            this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDlg = new System.Windows.Forms.SaveFileDialog();
-            this.chxUpperTxt = this.Factory.CreateRibbonCheckBox();
-            this.btnOpen = this.Factory.CreateRibbonButton();
-            this.btnSave = this.Factory.CreateRibbonButton();
             this.btnAddCategory = this.Factory.CreateRibbonButton();
             this.btnAddCode = this.Factory.CreateRibbonButton();
+            this.chxUpperTxt = this.Factory.CreateRibbonCheckBox();
             this.btnDelCategory = this.Factory.CreateRibbonButton();
             this.btnDelCode = this.Factory.CreateRibbonButton();
+            this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDlg = new System.Windows.Forms.SaveFileDialog();
+            this.group3 = this.Factory.CreateRibbonGroup();
+            this.group4 = this.Factory.CreateRibbonGroup();
             this.tab1.SuspendLayout();
             this.group2.SuspendLayout();
             this.group1.SuspendLayout();
+            this.group3.SuspendLayout();
+            this.group4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -60,6 +62,8 @@
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
             this.tab1.Groups.Add(this.group2);
             this.tab1.Groups.Add(this.group1);
+            this.tab1.Groups.Add(this.group3);
+            this.tab1.Groups.Add(this.group4);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
@@ -69,63 +73,6 @@
             this.group2.Items.Add(this.btnSave);
             this.group2.Label = "Options";
             this.group2.Name = "group2";
-            // 
-            // group1
-            // 
-            this.group1.Items.Add(this.cbxCategories);
-            this.group1.Items.Add(this.cbxCategoriesCodes);
-            this.group1.Items.Add(this.separator2);
-            this.group1.Items.Add(this.btnAddCategory);
-            this.group1.Items.Add(this.btnAddCode);
-            this.group1.Items.Add(this.chxUpperTxt);
-            this.group1.Items.Add(this.separator1);
-            this.group1.Items.Add(this.btnDelCategory);
-            this.group1.Items.Add(this.btnDelCode);
-            this.group1.Label = "Categories";
-            this.group1.Name = "group1";
-            // 
-            // cbxCategories
-            // 
-            this.cbxCategories.Label = "Categories";
-            this.cbxCategories.Name = "cbxCategories";
-            this.cbxCategories.SizeString = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-            this.cbxCategories.Text = null;
-            // 
-            // cbxCategoriesCodes
-            // 
-            this.cbxCategoriesCodes.Label = "Codes";
-            this.cbxCategoriesCodes.Name = "cbxCategoriesCodes";
-            this.cbxCategoriesCodes.SizeString = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-            this.cbxCategoriesCodes.Text = null;
-            // 
-            // separator2
-            // 
-            this.separator2.Name = "separator2";
-            // 
-            // separator1
-            // 
-            this.separator1.Name = "separator1";
-            // 
-            // openFileDlg
-            // 
-            this.openFileDlg.FileName = "Categories";
-            this.openFileDlg.Filter = "Txt|*.txt|Json|*.json";
-            this.openFileDlg.RestoreDirectory = true;
-            this.openFileDlg.Title = "select your source";
-            // 
-            // saveFileDlg
-            // 
-            this.saveFileDlg.DefaultExt = "txt";
-            this.saveFileDlg.FileName = "Categories";
-            this.saveFileDlg.Filter = "Txt|*.txt|Json|*.json";
-            this.saveFileDlg.RestoreDirectory = true;
-            this.saveFileDlg.Title = "Save the file";
-            // 
-            // chxUpperTxt
-            // 
-            this.chxUpperTxt.Label = "Upper";
-            this.chxUpperTxt.Name = "chxUpperTxt";
-            this.chxUpperTxt.ScreenTip = "Auto upper text when selected";
             // 
             // btnOpen
             // 
@@ -143,6 +90,27 @@
             this.btnSave.OfficeImageId = "FileSaveAs";
             this.btnSave.ShowImage = true;
             // 
+            // group1
+            // 
+            this.group1.Items.Add(this.cbxCategories);
+            this.group1.Items.Add(this.cbxCategoriesCodes);
+            this.group1.Label = "Categories";
+            this.group1.Name = "group1";
+            // 
+            // cbxCategories
+            // 
+            this.cbxCategories.Label = "Categories";
+            this.cbxCategories.Name = "cbxCategories";
+            this.cbxCategories.SizeString = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            this.cbxCategories.Text = null;
+            // 
+            // cbxCategoriesCodes
+            // 
+            this.cbxCategoriesCodes.Label = "Codes";
+            this.cbxCategoriesCodes.Name = "cbxCategoriesCodes";
+            this.cbxCategoriesCodes.SizeString = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            this.cbxCategoriesCodes.Text = null;
+            // 
             // btnAddCategory
             // 
             this.btnAddCategory.Label = "Add";
@@ -158,6 +126,12 @@
             this.btnAddCode.OfficeImageId = "AcceptInvitation";
             this.btnAddCode.ScreenTip = "Add a category code";
             this.btnAddCode.ShowImage = true;
+            // 
+            // chxUpperTxt
+            // 
+            this.chxUpperTxt.Label = "Upper";
+            this.chxUpperTxt.Name = "chxUpperTxt";
+            this.chxUpperTxt.ScreenTip = "Auto upper text when selected";
             // 
             // btnDelCategory
             // 
@@ -175,6 +149,36 @@
             this.btnDelCode.ScreenTip = "Delete a code";
             this.btnDelCode.ShowImage = true;
             // 
+            // openFileDlg
+            // 
+            this.openFileDlg.FileName = "Categories";
+            this.openFileDlg.Filter = "Txt|*.txt|Json|*.json";
+            this.openFileDlg.RestoreDirectory = true;
+            this.openFileDlg.Title = "select your source";
+            // 
+            // saveFileDlg
+            // 
+            this.saveFileDlg.DefaultExt = "txt";
+            this.saveFileDlg.FileName = "Categories";
+            this.saveFileDlg.Filter = "Txt|*.txt|Json|*.json";
+            this.saveFileDlg.RestoreDirectory = true;
+            this.saveFileDlg.Title = "Save the file";
+            // 
+            // group3
+            // 
+            this.group3.Items.Add(this.btnAddCategory);
+            this.group3.Items.Add(this.btnAddCode);
+            this.group3.Items.Add(this.chxUpperTxt);
+            this.group3.Label = "Add";
+            this.group3.Name = "group3";
+            // 
+            // group4
+            // 
+            this.group4.Items.Add(this.btnDelCategory);
+            this.group4.Items.Add(this.btnDelCode);
+            this.group4.Label = "Delete";
+            this.group4.Name = "group4";
+            // 
             // RibbonEdit
             // 
             this.Name = "RibbonEdit";
@@ -187,6 +191,10 @@
             this.group2.PerformLayout();
             this.group1.ResumeLayout(false);
             this.group1.PerformLayout();
+            this.group3.ResumeLayout(false);
+            this.group3.PerformLayout();
+            this.group4.ResumeLayout(false);
+            this.group4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -204,11 +212,11 @@
         private System.Windows.Forms.OpenFileDialog openFileDlg;
         private System.Windows.Forms.SaveFileDialog saveFileDlg;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnAddCode;
-        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnDelCategory;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnDelCode;
-        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator2;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox chxUpperTxt;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group4;
     }
 
     partial class ThisRibbonCollection

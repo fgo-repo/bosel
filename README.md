@@ -7,6 +7,7 @@ This software will provide you an easy and basic way to merge your bank outputs 
 It'll allow you to map your inputs with categories.
 Once generated, the Excel output will group your data by date and categories (pivot + graph).
 An extra sheet will group your expenses and earnings by months.
+It'll also allow different versions of mapping by bank.
 
 Csv and Excel files (xlsx) are accepted as inputs.
 
@@ -25,3 +26,6 @@ Check the comments in the class to know how to use them.
 You'll need to restore the NuGet packages at the first run for:
 * [Json.NET, popular high-performance JSON framework for .NET](http://www.newtonsoft.com/json)
 * [EPPlus, a library to manage Excel spreadsheets, using OOXML](http://epplus.codeplex.com/)
+
+For Visual Studio 2015 (if you want to use the Excel addin):
+* [Microsoft Office Developer Tools for Visual Studio 2015](https://blogs.msdn.microsoft.com/visualstudio/2015/11/23/latest-microsoft-office-developer-tools-for-visual-studio-2015/) ([direct link](https://aka.ms/GetLatestOfficeDevTools))

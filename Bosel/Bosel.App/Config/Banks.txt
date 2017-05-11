@@ -142,7 +142,7 @@
 								"Out": "DETAIL"
 							},
 							{
-								"In": "Message",
+								"In": "Libellés",
 								"Out": "MESSAGE"
 							},
 							{
