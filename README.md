@@ -29,3 +29,5 @@ You'll need to restore the NuGet packages at the first run for:
 
 For Visual Studio 2015 (if you want to use the Excel addin):
 * [Microsoft Office Developer Tools for Visual Studio 2015](https://blogs.msdn.microsoft.com/visualstudio/2015/11/23/latest-microsoft-office-developer-tools-for-visual-studio-2015/) ([direct link](https://aka.ms/GetLatestOfficeDevTools))
+
+![Alt text](./README.jpg?raw=true "Global view of the pivot output and VSTO addin")
